@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruksi Tugas GitHub Mahasiswa</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        .container{
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        h2{
+            margin-top: 30px;
+            color: #444;
+        }
+
+        code{
+            background-color: #eee;
+            padding: 3px 6px;
+            border-radius: 5px;
+        }
+
+        pre{
+            background-color: #222;
+            color: #00ff88;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .step{
+            margin-bottom: 25px;
+        }
+
+        ul{
+            padding-left: 20px;
+        }
+
+        .note{
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid orange;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Instruksi Tugas GitHub Mahasiswa</h1>
+
+    <p>
+        Workflow yang digunakan:
+        <b>Fork → Clone → Edit → Commit → Push → Pull Request</b>
+    </p>
+
+    <div class="step">
+        <h2>1. Buka Repository Dosen</h2>
+
+        <p>Buka Repository:</p>
+
+        <pre>https://github.com/joysinaga04/LATIHAN-BPG.git</pre>
+    </div>
+
+    <div class="step">
+        <h2>2. Klik Tombol “Fork”</h2>
+
+        <p>
+            Tombol Fork berada di pojok kanan atas GitHub.
+        </p>
+        <img src="step1.png" alt="Foto Budi" width="100%" height="100%">;
+
+        <p>
+            Tujuan Fork:
+            Menyalin repository dosen ke akun GitHub masing-masing.
+        </p>
+        <img src="step2.png" alt="Foto Budi" width="100%" height="100%">;
+    </div>
+
+    <div class="step">
+        <h2>3. Clone Repository Hasil Fork</h2>
+
+        <p>
+            Klik tombol hijau <code>Code</code>, lalu copy URL repository.
+        </p>
+
+        <p>Contoh:</p>
+
+        <pre>https://github.com/joysinaga04/LATIHAN-BPG.git</pre>
+
+        <p>Buka Git Bash / CMD lalu ketik:</p>
+
+        <pre>git clone https://github.com/joysinaga04/LATIHAN-BPG.git</pre>
+    </div>
+
+    <div class="step">
+        <h2>4. Masuk ke Folder Repository</h2>
+
+        <pre>cd LATIHAN-BPG</pre>
+    </div>
+
+    <div class="step">
+        <h2>5. Tambahkan File HTML</h2>
+
+        <p>
+            Masuk ke folder:
+        </p>
+
+        <pre>mahasiswa</pre>
+
+        <p>
+            Buat file sesuai nama masing-masing.
+        </p>
+
+        <p>Contoh:</p>
+
+        <pre>budi.html</pre>
+    </div>
+
+    <div class="step">
+        <h2>6. Isi HTML Data Diri</h2>
+        <p>Contoh isi file seperti Gambar <code>(struktur tables harus sama (styling bebas))</code>:</p>
+        <img src="table.png" alt="Foto Budi" width="100%" height="100%">;
+    </div>
+
+    <div class="step">
+        <h2>7. Simpan File</h2>
+
+        <p>Contoh:</p>
+
+        <pre>mahasiswa/budi.html</pre>
+    </div>
+
+    <div class="step">
+        <h2>8. Git Add</h2>
+
+        <pre>git add .</pre>
+    </div>
+
+    <div class="step">
+        <h2>9. Commit</h2>
+
+        <pre>git commit -m "Menambahkan halaman Budi"</pre>
+    </div>
+
+    <div class="step">
+        <h2>10. Push ke GitHub</h2>
+
+        <pre>git push origin main</pre>
+    </div>
+
+    <div class="step">
+        <h2>11. Buat Pull Request</h2>
+
+        <p>
+            Buka repository GitHub hasil fork.
+        </p>
+
+        <p>
+            Biasanya akan muncul tombol:
+        </p>
+
+        <pre>Compare & Pull Request</pre>
+
+        <p>Klik tombol tersebut.</p>
+        <img src="step3.png" alt="Foto Budi" width="100%" height="100%">;
+    </div>
+
+    <div class="step">
+        <h2>12. Klik “Create Pull Request”</h2>
+
+        <p>Tambahkan deskripsi singkat jika perlu.</p>
+
+        <p>Contoh:</p>
+
+        <pre>Menambahkan halaman HTML data diri.</pre>
+
+        <p>Lalu klik:</p>
+
+        <pre>Create Pull Request</pre>
+        <img src="step4.png" alt="Foto Budi" width="100%" height="100%">
+    </div>
+
+    <div class="step">
+        <h2>13. Selesai 🎉</h2>
+
+        <p>
+            Dosen akan mereview dan merge hasil pekerjaan mahasiswa.
+        </p>
+    </div>
+
+    <div class="note">
+        <b>Catatan:</b><br>
+        Pastikan nama file menggunakan nama masing-masing.<br>
+        Contoh:
+        <code>budi.html</code>,
+        <code>sinta.html</code>,
+        <code>andi.html</code>
+    </div>
+
+    <footer>
+        Praktikum GitHub Collaboration - Pemrograman Web
+    </footer>
+
+</div>
+
+</body>
+</html>
